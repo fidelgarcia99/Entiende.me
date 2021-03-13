@@ -2502,5 +2502,14 @@ footer.site-footer {
   #cellPaiChart #pieLabel0 {
     left: inherit !important;
     right: 20px !important; }
+   .text-index{
+    color:black;
+   font-family: 'Cookie', cursive;
+  font-family: 'Open Sans Condensed', sans-serif;}
+  .fontwo{
+   font-family: 'Heebo', sans-serif;}
+   .fontone{
+    font-family: 'Cookie', cursive}
+
 
 /*# sourceMappingURL=style.css.map */
