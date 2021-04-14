@@ -12,7 +12,7 @@
      <title>Entiende.me</title>
      <meta name="description" content="Ela Admin - HTML5 Admin Template">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="icon" type="image/png" href="images/favicon.png">
+     <link rel="icon" type="image/png" href="assets/img/favicon.png">
 
      <link rel="apple-touch-icon" href="https://i.imgur.com/QRAUqs9.png">
      <link rel="shortcut icon" href="https://i.imgur.com/QRAUqs9.png">
@@ -92,7 +92,7 @@
 
                <div class="top-left">
                     <div class="navbar-header">
-                         <a class="navbar-brand" href="./"><img src="images/logo.png" alt="Logo"></a>
+                         <a class="navbar-brand" href="./"><img src="assets/img/logo.png" alt="Logo"></a>
                     </div>
                </div>
 
@@ -108,73 +108,49 @@
      </div>
      </header>
 
-    <div class="content">
-        <div class="row">
-            <div class="col">
-                <div class="card">
-                    <div class="card-header">
-                        <strong>¿Que servicios desea contratar?</strong> 
-                    </div>
-                    <div class="card-body card-block">
-                        <form action="#" method="post" enctype="multipart/form-data" class="form-horizontal">
-                            <div class="row form-group">
-                                <div class="col col-md-3"><label for="email-input" class=" form-control-label">Nombre Completo</label></div>
-                                <div class="col-12 col-md-9"><input type="email" id="email-input" name="" placeholder="" class="form-control"></div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col col-md-3"><label for="password-input" class=" form-control-label">Correo Personal</label></div>
-                                <div class="col-12 col-md-9"><input type="password" id="password-input" name="password-input" placeholder="" class="form-control"></div>
-                            </div>
-                
-                            <div class="row form-group">
-                                <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Especifique que desea desarrollar</label></div>
-                                <div class="col-12 col-md-9"><textarea name="textarea-input" id="textarea-input" rows="9" placeholder="" class="form-control"></textarea></div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col col-md-3"><label for="select" class=" form-control-label">¿Que lenguaje desearia?</label></div>
-                                <div class="col-12 col-md-9">
-                                    <select name="select" id="select" class="form-control">
-                                        <option value="0">Please select</option>
-                                        <option value="1">Java</option>
-                                        <option value="2">C++</option>
-                                        <option value="3">Indiferente</option>
-                                    </select>
-                                </div>
-                            </div>
-                    
-                            <div class="row form-group">
-                                <div class="col col-md-3"><label for="multiple-select" class=" form-control-label">¿Que plataforma desearia?</label></div>
-                                <div class="col col-md-9">
-                                    <select name="multiple-select" id="multiple-select" multiple="" class="form-control">
-                                        <option value="1">Web</option>
-                                        <option value="2">Movil</option>
-                                        <option value="3">Escritorio</option>
-                                
-                                    </select>
-                                </div>
-                            </div>
-                        
-                            
-                            
-                        </form>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col">
-                            <button type="submit" class="btn btn-primary ">
-                                <i class="fa fa-dot-circle-o"></i> Enviar
-                            </button>
-                            <button type="reset" class="btn btn-danger ">
-                                <i class="fa fa-ban"></i> Eliminar
-                            </button>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+     <div class="content">
+          <div class="row justify-content-center">
+              <div class="col-10">
+                  <div class="card justify-content-center">
+                      <div class="card-header">
+                          <strong>Registrarse</strong> 
+                      </div>
+                      <div class="card-body card-block">
+                          <form action="#" method="post" enctype="multipart/form-data" class="form-horizontal">
+                              <div class="row form-group justify-content-center">
+                                  <div class="col-2"><label for="email-input" class=" form-control-label">Primer Nombre</label></div>
+                                  <div class="col-6"><input type="email" id="email-input" name="" placeholder="" class="form-control"></div>
+                              </div><br>
 
-
+                              <div class="row form-group justify-content-center">
+                                  <div class="col-2"><label for="email-input" class=" form-control-label">Primer Apellido</label></div>
+                                  <div class="col-6"><input type="email" id="email-input" name="" placeholder="" class="form-control"></div>
+                              </div><br>
+                              <div class="row form-group justify-content-center">
+                                   <div class="col-2"><label for="email-input" class=" form-control-label">Fecha Registro</label></div>
+                                   <div class="col-6"><input type="date" id="email-input" name="" placeholder="" class="form-control"></div>
+                               </div><br>
+                               <div class="row form-group justify-content-center">
+                                   <div class="col-2"><label for="textarea-input" class=" form-control-label">Especifique sus habilidades</label></div>
+                                   <div class="col-6"><textarea name="OtrosDatos" id="" rows="9" placeholder="" class="form-control"></textarea><small id="" class="form-text text-muted">* Especifique</small></div>
+                                   
+                               </div>
+                          
+                              
+                              
+                          </form>
+                      </div>
+                      <div class="row justify-content-center">
+                          <div class="col-3 text-center"><button type="button" class="btn btn-success " onclick="" ><i class="fa fa-save"></i>&nbsp; Registrarse como Programador</button></div>
+                          <div class="col-3 text-center"><button type="button" class="btn btn-success " onclick="" ><i class="fa fa-save"></i>&nbsp; Registrarse como Cliente</button></div>
+                      </div><br>
+                      
+                  </div>
+              </div>
+          </div>
+      </div
+     </div>
+     
      <div class="clearfix"></div>
      <!-- Footer -->
      <footer class="site-footer">
