@@ -2510,6 +2510,8 @@ footer.site-footer {
    font-family: 'Heebo', sans-serif;}
    .fontone{
     font-family: 'Cookie', cursive}
+       
+    html { overflow-x:hidden; }
 
 
 /*# sourceMappingURL=style.css.map */
