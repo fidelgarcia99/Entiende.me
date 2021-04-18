@@ -2502,14 +2502,18 @@ footer.site-footer {
   #cellPaiChart #pieLabel0 {
     left: inherit !important;
     right: 20px !important; }
-   .text-index{
+  .text-index{
     color:black;
-   font-family: 'Cookie', cursive;
+  font-family: 'Cookie', cursive;
   font-family: 'Open Sans Condensed', sans-serif;}
   .fontwo{
-   font-family: 'Heebo', sans-serif;}
-   .fontone{
+  font-family: 'Heebo', sans-serif;}
+  .fontone{
     font-family: 'Cookie', cursive}
+  .logButton{color: white; 
+      background-color: #36a7c6;}
+  .logButton:hover{color: black; 
+        background-color: #e3f3f5;}
        
     html { overflow-x:hidden; }
 
