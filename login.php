@@ -22,7 +22,8 @@
 
      }
 	elseif ($nr==0) {
-         echo "No ingreso";
+          header("location:acceso.html");
+
      }
 	
 ?>
