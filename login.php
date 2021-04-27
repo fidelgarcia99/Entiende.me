@@ -1,3 +1,4 @@
+@@ -0,0 +1,28 @@
 <?php
 
 	$dbhost="localhost";
@@ -18,12 +19,9 @@
      $nr= mysqli_num_rows($query);
 
      if ($nr==1) {
-         header("location:perfil.html");
+         header("location:perfil.php");
 
      }
 	elseif ($nr==0) {
           header("location:acceso.html");
-
      }
-	
-?>
