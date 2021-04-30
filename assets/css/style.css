@@ -419,6 +419,9 @@ input,
 textarea {
   -webkit-box-shadow: none;
           box-shadow: none;
+          border-color: #0099d4;
+          resize: none;
+          background-color:rgba(255, 255, 2555, 0.5);
   outline: 0 !important; }
 
 .no-padding {
@@ -2515,6 +2518,22 @@ footer.site-footer {
   .logButton:hover{color: black; 
         background-color: #e3f3f5;}
     html { overflow-x:hidden; }
+    .botonenviar{color: white; 
+      background-color: #36a7c6;
+    border-radius: 0.4rem;
+    height: 3rem;
+    width: 5rem;}
+    .botonenviar:hover{color:black; 
+      background-color: #e3f3f5;
+    border-radius: 0.4rem;
+    height: 3rem;
+    width: 5rem;}
+    .boton{color: white; 
+      background-color: #36a7c6;
+    border-radius: 0.4rem;}
+    .boton:hover{color:black; 
+      background-color: #e3f3f5;
+    border-radius: 0.4rem;}
 
 
 /*# sourceMappingURL=style.css.map */

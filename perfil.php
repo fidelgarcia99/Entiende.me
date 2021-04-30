@@ -1,23 +1,3 @@
-<?php
-
-session_start();
-
-if(isset($_SESSION['nombredelusuario']))
-{
-	$usuarioingresado = $_SESSION['nombredelusuario'];
-
-}
-else
-{
-	header('location: index.html');
-}
-
-if(isset($_POST['btncerrar']))
-{
-	session_destroy();
-	header('location: index.html');
-}
-?>
 
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->

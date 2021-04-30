@@ -1,3 +1,15 @@
+<?php
+$dbhost="localhost";
+$dbuser="root";
+$dbpass="";
+$dbname="entiende.me";
+
+$conn=mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+
+if (!$conn) {
+     die ("No hay conexion: ".mysqli_connect_error());
+} ?>
+
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -111,42 +123,41 @@
      <h1 class="fontone mb-3" style="font-size: 5rem;margin-left: 3rem;">Proyectos</h1>
      <div class="row justify-content-center">
 
-          <div class="container-fluid" style="margin-left: 3rem;margin-right: 3rem;">
-               <div class="card">
-                    <div class="card-header fontone" style="font-size: 1.7rem;">
-                         Proyecto #1
-                    </div>
-                    <div class="card-body">
-                         <h5 class="card-title">Special title treatment</h5>
-                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                         <a href="#" class="btn btn-primary">Me interesa</a>
-                    </div>
-               </div>
+     <form action="" method="POST">
+<textarea style="border-color: #0099d4; width: 80rem; height:10rem"   name="comentario" id="" cols="30" rows="10"></textarea>
+<br>
+<input type="submit" class="botonenviar" name="enviar" value="Postear">
+</form>
 
-               <div class="card">
-                    <div class="card-header fontone" style="font-size: 1.7rem;">
-                         Proyecto #2
-                    </div>
-                    <div class="card-body">
-                         <h5 class="card-title">Special title treatment</h5>
-                         <p class="card-text">With supporting text below as a natural lead-in to additional
-                              content.</p>
-                         <a href="#" class="btn btn-primary">Me interesa</a>
-                    </div>
-               </div>
+<?php
+     if (isset($_POST['enviar'])) {
+          $comentario= utf8_decode(mysqli_real_escape_string($conn,$_POST['comentario']));
+          if ($comentario=="") {
+          }else {
+               $insertar = mysqli_query($conn, "Insert into post(comentario) values ('".$comentario."')");
+          }
+     }
+?>
 
-               <div class="card">
-                    <div class="card-header fontone" style="font-size: 1.7rem;">
-                         Proyecto #3
-                    </div>
-                    <div class="card-body">
-                         <h5 class="card-title">Special title treatment</h5>
-                         <p class="card-text">With supporting text below as a natural lead-in to additional
-                              content.</p>
-                         <a href="#" class="btn btn-primary">Me interesa</a>
-                    </div>
-               </div>
-          </div>
+<br>
+
+          <div class="container-fluid" style="margin-left: 3rem;margin-right: 3rem; margin-top: 4rem;">
+               
+               <?php
+                   $consulta=mysqli_query($conn, "SELECT * FROM post");
+                    while ($row = mysqli_fetch_assoc($consulta)) {
+                         echo "
+                         <div class='container-fluid' style='background-color: rgba(40,117,224,0.3); border-radius:0.4rem; height:8rem;'>
+                         <p style=' padding: 20px; color:black'>".$row['comentario']."</p>
+                         <input  style='' type='submit' class='boton' value='Me interesa'>
+                         </div>
+                         <br>
+                         " ;
+                    }
+               ?>
+</div>
+
+<br>
 
 </body>
 
