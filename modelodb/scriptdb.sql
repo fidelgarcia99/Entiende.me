@@ -47,6 +47,10 @@ CREATE TABLE IF NOT EXISTS `Entiende.me`.`EmpresaDesarrollo` (
   PRIMARY KEY (`idEmpresaDesarrollo`))
 ENGINE = InnoDB;
 
+CREATE TABLE `Entiende.me`.`post` (
+  `idpost` INT NOT NULL,
+  `comentario` TEXT NULL,
+  PRIMARY KEY (`idpost`));
 
 -- -----------------------------------------------------
 -- Table `Entiende.me`.`Desarrollador`
