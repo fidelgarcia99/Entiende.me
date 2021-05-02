@@ -132,7 +132,7 @@ if (!$conn) {
 <?php
      if (isset($_POST['enviar'])) {
           $comentario= utf8_decode(mysqli_real_escape_string($conn,$_POST['comentario']));
-          $insertar = mysqli_query($conn, "Insert into post(comentario) values ('".$comentario."')");
+          $insertar = mysqli_query($conn, "Insert into post(idpost, comentario) values ('".$comentario."')");
           echo "Se envio correctamente.";
      }
 ?>
