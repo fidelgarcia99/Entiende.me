@@ -119,8 +119,8 @@
           <div class="card" style="width: 60rem;">
                <h5 class="card-header fontwo">Portafolio</h5>
                <div class="card-body">
-                    <p class="card-text">Ingresa los proyectos en los que haz trabajado</p>
-                    <a href="#" class="btn btn-primary">Nueva referencia</a>
+                    <p class="card-text">Ingresa los proyectos en los que has trabajado</p>
+                    <a href="#" class="btn btn-primary" onclick="location.href='proyectos.php'" >Nueva referencia</a>
                </div>
           </div>
 
